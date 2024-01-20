@@ -69,12 +69,12 @@ for (var i = 0; i < numberOfButtons; i++) {
   }
 
   function buttonAnimation(currentKey) {
-    var activeButton = document.querySelector("." + currentKey);
+    var activeButtons = document.querySelector("." + currentKey);
 
-    activeButton.classList.add("pressed");
+    activeButtons.classList.add("pressed");
 
     setTimeout(function () {
-      activeButton.classList.remove("pressed");
+      activeButtons.classList.remove("pressed");
     }, 100);
   }
 }
